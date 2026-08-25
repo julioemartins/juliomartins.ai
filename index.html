@@ -1,160 +1,115 @@
-<!DOCTYPE html>
+<!-- Modernismo de Travessia: evidência, hierarquia editorial e sobriedade operacional. -->
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Julio Martins — Modernização sem ruptura</title>
-<meta name="description" content="Julio Martins lidera a modernização de sistemas críticos legados — preparando-os para a era da IA sem interromper a operação.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Manrope:wght@400;600;700&display=swap">
-<style>
-  :root{
-    --ground:#FAFAF7; --ink:#15181D; --muted:#5B6169; --line:#E4E4DE;
-    --accent:#0E5FA5; --accent-deep:#0A4679; --card:#FFFFFF;
-  }
-  *{margin:0; padding:0; box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{background:var(--ground); color:var(--ink);
-    font-family:"Manrope",-apple-system,"Segoe UI",sans-serif; font-size:17px; line-height:1.6;
-    -webkit-font-smoothing:antialiased}
-  .wrap{max-width:880px; margin:0 auto; padding:0 24px}
-  a{color:var(--accent); text-decoration:none}
-  a:hover{text-decoration:underline; text-underline-offset:3px}
-
-  header{padding:28px 0; border-bottom:1px solid var(--line)}
-  header .wrap{display:flex; justify-content:space-between; align-items:center}
-  .logo{font-family:"Archivo",sans-serif; font-weight:800; font-size:1.05rem; letter-spacing:.06em; color:var(--ink)}
-  nav{display:flex; gap:26px; font-size:.92rem; font-weight:600}
-  nav a{color:var(--muted)}
-  nav a:hover{color:var(--accent); text-decoration:none}
-
-  .hero{padding:96px 0 72px}
-  .hero h1{font-family:"Archivo",sans-serif; font-weight:800; line-height:1.04;
-    font-size:clamp(2.4rem, 6vw, 4rem); letter-spacing:-.015em; max-width:16ch; text-wrap:balance}
-  .hero h1 em{font-style:normal; color:var(--accent)}
-  .hero p{margin-top:28px; font-size:1.18rem; color:var(--muted); max-width:52ch}
-  .hero .cta{margin-top:36px; display:flex; gap:16px; flex-wrap:wrap}
-  .btn{display:inline-block; padding:13px 26px; border-radius:8px; font-weight:700; font-size:.95rem}
-  .btn-solid{background:var(--accent); color:#fff}
-  .btn-solid:hover{background:var(--accent-deep); text-decoration:none}
-  .btn-ghost{border:1.5px solid var(--line); color:var(--ink)}
-  .btn-ghost:hover{border-color:var(--accent); color:var(--accent); text-decoration:none}
-
-  .strip{border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:var(--card)}
-  .strip .wrap{display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:0}
-  .stat{padding:34px 22px; border-left:1px solid var(--line)}
-  .stat:first-child{border-left:none}
-  .stat b{display:block; font-family:"Archivo",sans-serif; font-weight:800; font-size:2rem; letter-spacing:-.01em; font-variant-numeric:tabular-nums}
-  .stat span{display:block; margin-top:6px; font-size:.88rem; color:var(--muted); line-height:1.45}
-  .strip .note{grid-column:1/-1; padding:0 22px 20px; font-size:.8rem; color:var(--muted)}
-
-  section{padding:80px 0}
-  .kicker{font-family:"Archivo",sans-serif; font-weight:700; font-size:.78rem; letter-spacing:.16em;
-    text-transform:uppercase; color:var(--accent); margin-bottom:14px}
-  h2{font-family:"Archivo",sans-serif; font-weight:800; font-size:1.9rem; letter-spacing:-.01em; text-wrap:balance}
-  section p{margin-top:18px; color:var(--muted); max-width:62ch}
-  section p strong{color:var(--ink)}
-
-  .tese-list{margin-top:28px; display:grid; gap:14px}
-  .tese-item{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:20px 24px}
-  .tese-item b{font-weight:700}
-  .tese-item span{color:var(--muted)}
-
-  .soon{border:1.5px dashed var(--line); border-radius:12px; padding:28px; margin-top:28px;
-    display:flex; align-items:baseline; gap:14px; flex-wrap:wrap}
-  .soon .tag{font-family:"Archivo",sans-serif; font-weight:700; font-size:.75rem; letter-spacing:.12em;
-    text-transform:uppercase; color:var(--accent); border:1px solid var(--accent); border-radius:999px; padding:4px 12px}
-  .soon p{margin:0; color:var(--muted)}
-
-  footer{border-top:1px solid var(--line); padding:36px 0 60px; font-size:.88rem; color:var(--muted)}
-  footer .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px}
-
-  @media (max-width:600px){
-    .hero{padding:64px 0 48px}
-    .stat{border-left:none; border-top:1px solid var(--line)}
-    .stat:first-child{border-top:none}
-  }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Julio Martins — Modernização sem ruptura operacional</title>
+  <meta name="description" content="Julio Martins lidera modernizações de sistemas críticos sem ruptura operacional — do legado à plataforma que permite crescer, com a operação rodando o tempo inteiro.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Julio Martins — Modernização sem ruptura operacional">
+  <meta property="og:description" content="Modernização de sistemas críticos com responsabilidade pela travessia e a operação rodando o tempo inteiro.">
+  <meta property="og:image" content="https://juliomartins.ai/assets/img/og-default.svg">
+  <meta property="og:url" content="https://juliomartins.ai/">
+  <link rel="canonical" href="https://juliomartins.ai/">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100,700;100,800;100,900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
+  <header class="site-header">
+    <div class="page-shell header-inner">
+        <a class="brand" href="index.html" aria-label="Julio Martins, página inicial">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-wordmark"><span>JULIO</span><span>MARTINS</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <a href="#tese">Tese</a>
+        <a href="casos/index.html">Casos</a>
+        <a href="blog/index.html">Blog</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
 
-<header>
-  <div class="wrap">
-    <div class="logo">JULIO MARTINS</div>
-    <nav>
-      <a href="#tese">Tese</a>
-      <a href="#casos">Casos</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <div class="hero">
-    <div class="wrap">
-      <h1>Modernização de sistemas críticos <em>sem ruptura operacional</em>.</h1>
-      <p>Eu lidero travessias: do sistema legado que sustenta o negócio para a plataforma que permite crescer — com a operação rodando o tempo inteiro.</p>
-      <div class="cta">
-        <a class="btn btn-solid" href="#contato">Falar comigo</a>
-        <a class="btn btn-ghost" href="#casos">Ver a última travessia</a>
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="page-shell hero-grid">
+        <div class="hero-copy">
+          <p class="section-label">Modernização de sistemas críticos</p>
+          <h1 id="hero-title">Modernização de sistemas críticos <strong>sem ruptura operacional</strong>.</h1>
+          <p class="hero-intro">Eu lidero travessias: do sistema legado que sustenta o negócio para a plataforma que permite crescer — com a operação rodando o tempo inteiro.</p>
+          <div class="hero-actions">
+            <a class="button button--primary" href="#contato">Falar comigo</a>
+            <a class="button button--secondary" href="casos/index.html">Ver a última travessia</a>
+          </div>
+        </div>
+        <aside class="hero-index" aria-label="Princípio de trabalho">
+          <p>Critério de sucesso</p>
+          <strong>Operação<br>contínua</strong>
+          <span class="rule" aria-hidden="true"></span>
+          <p>Do diagnóstico ao desligamento do legado.</p>
+        </aside>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="strip" id="casos">
-    <div class="wrap">
-      <div class="stat"><b>Zero</b><span>downtime nos clientes de missão crítica durante toda a migração</span></div>
-      <div class="stat"><b>4×</b><span>de crescimento da operação — durante a travessia, não depois dela</span></div>
-      <div class="stat"><b>100%</b><span>do sistema legado desligado ao final</span></div>
-      <div class="stat"><b>2,5 anos</b><span>de migração do core, cliente a cliente, com escrita dupla até cada virada</span></div>
-      <div class="note">Números da última travessia liderada (2022–2026), em plataforma que gerencia milhões de simcards. Estudo de caso completo em publicação.</div>
-    </div>
-  </div>
-
-  <section id="tese">
-    <div class="wrap">
-      <div class="kicker">A tese</div>
-      <h2>Modernizar não é reescrever código. É atravessar sem destruir valor.</h2>
-      <p>A IA tornou barato gerar código novo. O que continua raro é <strong>assumir a responsabilidade pela travessia</strong>: descobrir as regras de negócio que não estão documentadas, decidir o que preservar e o que substituir, operar o velho e o novo em paralelo, proteger receita e clientes — e desligar o legado só quando a equivalência está provada.</p>
-      <div class="tese-list">
-        <div class="tese-item"><b>O problema é econômico, não técnico.</b> <span>Stack antiga significa mão de obra cara e escassa, custo de recursos e risco crescente. A modernização certa ataca isso — não a moda tecnológica.</span></div>
-        <div class="tese-item"><b>Primeiro estabilizar, depois migrar.</b> <span>Ninguém faz travessia com o navio afundando. A primeira fase é parar a sangria e criar as condições — quem pula essa etapa migra o caos junto.</span></div>
-        <div class="tese-item"><b>A operação nunca para.</b> <span>Fundação, satélites, produto a produto, e o core cliente a cliente — com dados escritos dos dois lados até cada virada. Downtime não é acidente evitado; é resultado projetado.</span></div>
+    <section class="evidence" aria-labelledby="evidence-title">
+      <h2 id="evidence-title" class="skip-link">Resultados da última travessia</h2>
+      <div class="page-shell evidence-grid">
+        <article class="stat"><span class="stat-number stat-number--word">Zero</span><span class="stat-copy">downtime nos clientes de missão crítica durante toda a migração</span></article>
+        <article class="stat"><span class="stat-number">4×</span><span class="stat-copy">crescimento da operação durante a travessia, não depois dela</span></article>
+        <article class="stat"><span class="stat-number">100%</span><span class="stat-copy">do sistema legado desligado ao final</span></article>
+        <article class="stat"><span class="stat-number">2,5 <small>anos</small></span><span class="stat-copy">de migração do core, cliente a cliente, com escrita dupla até cada virada</span></article>
       </div>
-    </div>
-  </section>
+      <div class="page-shell"><p class="evidence-note">Números da última travessia liderada (2022–2026), em plataforma que gerencia milhões de simcards. Estudo de caso completo em publicação.</p></div>
+    </section>
 
-  <section id="sobre">
-    <div class="wrap">
-      <div class="kicker">Sobre</div>
-      <h2>Julio Martins</h2>
-      <p>Mais de 25 anos construindo e transformando sistemas que sustentam operações reais — atravessando gerações de tecnologia, de Clipper a IA. Perfil híbrido: arquitetura, produto, operação e negócio na mesma cadeira. Hoje aplico IA com método em modernização de sistemas críticos e na criação de ativos operacionais.</p>
-      <div class="soon">
-        <span class="tag">Em publicação</span>
-        <p>Estudos de caso documentados — com números, método e o que quase deu errado — e um blog sobre travessias reais.</p>
+    <section class="content-section" id="tese" aria-labelledby="tese-title">
+      <div class="page-shell">
+        <p class="section-label">A tese</p>
+        <h2 id="tese-title">Modernizar não é reescrever código. É atravessar sem destruir valor.</h2>
+        <p class="lead">A IA tornou barato gerar código novo. O que continua raro é assumir a responsabilidade pela travessia: descobrir as regras de negócio que não estão documentadas, decidir o que preservar e o que substituir, operar o velho e o novo em paralelo, proteger receita e clientes — e desligar o legado só quando a equivalência está provada.</p>
+        <div class="principles">
+          <article class="principle"><span class="principle-index">01</span><h3>O problema é econômico, não técnico.</h3><p>Stack antiga significa mão de obra cara e escassa, custo de recursos e risco crescente. A modernização certa ataca isso — não a moda tecnológica.</p></article>
+          <article class="principle"><span class="principle-index">02</span><h3>Primeiro estabilizar, depois migrar.</h3><p>Ninguém faz travessia com o navio afundando. A primeira fase é parar a sangria e criar as condições — quem pula essa etapa migra o caos junto.</p></article>
+          <article class="principle"><span class="principle-index">03</span><h3>A operação nunca para.</h3><p>Fundação, satélites, produto a produto, e o core cliente a cliente — com dados escritos dos dois lados até cada virada. Downtime não é acidente evitado; é resultado projetado.</p></article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contato">
-    <div class="wrap">
-      <div class="kicker">Contato</div>
-      <h2>Uma travessia à vista?</h2>
-      <p>Se a sua operação depende de um sistema que ficou velho — e parar não é opção — vale uma conversa.</p>
-      <div class="cta" style="margin-top:28px">
-        <a class="btn btn-solid" href="https://www.linkedin.com/in/juliomartins" rel="me">LinkedIn</a>
+    <section class="content-section" id="sobre" aria-labelledby="sobre-title">
+      <div class="page-shell about-grid">
+        <!-- PLACEHOLDER-IMG: foto profissional do Julio — assets/img/julio.jpg — usar imagem cinza com proporção 4:5 até a foto existir. -->
+        <div class="portrait-placeholder" role="img" aria-label="Composição cinza temporária reservada para a foto profissional de Julio Martins"></div>
+        <div class="about-copy">
+          <p class="section-label">Sobre</p>
+          <h2 id="sobre-title">Julio Martins</h2>
+          <p class="lead">Mais de 25 anos construindo e transformando sistemas que sustentam operações reais — atravessando gerações de tecnologia, de Clipper a IA. Perfil híbrido: arquitetura, produto, operação e negócio na mesma cadeira. Hoje aplico IA com método em modernização de sistemas críticos e na criação de ativos operacionais.</p>
+        </div>
       </div>
-    </div>
-  </section>
-</main>
+    </section>
 
-<footer>
-  <div class="wrap">
-    <span>© 2026 Julio Martins</span>
-    <span>juliomartins.ai</span>
-  </div>
-</footer>
+    <section class="content-section" id="contato" aria-labelledby="contato-title">
+      <div class="page-shell">
+        <div class="contact-panel">
+          <p class="section-label">Contato</p>
+          <h2 id="contato-title">Uma travessia à vista?</h2>
+          <p>Se a sua operação depende de um sistema que ficou velho — e parar não é opção — vale uma conversa.</p>
+          <!-- PLACEHOLDER-LINK: URL do LinkedIn do Julio. -->
+          <p><a class="button button--primary" href="https://www.linkedin.com/in/juliomartins" rel="me">Falar pelo LinkedIn</a></p>
+          <!-- PLACEHOLDER: e-mail profissional — decidir se será exibido. -->
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <div class="page-shell footer-inner"><span>© 2026 Julio Martins</span><a href="https://juliomartins.ai/">juliomartins.ai</a></div>
+  </footer>
 </body>
 </html>
