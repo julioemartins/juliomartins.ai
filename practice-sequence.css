@@ -1,2 +1,65 @@
-/* Sistema Vivo — práticas como capítulos de produto, nunca como cartões de apresentação. */
-.practice-grid{display:none}.practice-sequence{margin-top:clamp(3rem,6vw,6rem);border-top:1px solid var(--line)}.practice-row{position:relative;display:grid;grid-template-columns:minmax(4rem,.18fr) minmax(15rem,1.1fr) minmax(16rem,.62fr);gap:clamp(1.5rem,4vw,5rem);align-items:end;min-height:clamp(19rem,25vw,26rem);padding:clamp(2rem,4vw,4.25rem) clamp(1.3rem,3.5vw,4rem);border-bottom:1px solid var(--line)}.practice-row h3{max-width:11ch;margin:0;font-size:clamp(2.8rem,5vw,5.8rem);font-weight:700;letter-spacing:-.08em;line-height:.88}.practice-index{align-self:start;margin:0;color:var(--blue);font-size:.9rem;font-weight:800}.practice-summary{align-self:end;max-width:27rem}.practice-summary p{margin:0;color:var(--muted);font-size:clamp(1rem,1.25vw,1.14rem);line-height:1.58}.practice-summary a{display:inline-block;margin-top:1.65rem;color:var(--ink);font-size:.92rem;font-weight:800;text-decoration:none}.practice-summary a:hover{color:var(--blue)}.practice-row--01{min-height:clamp(26rem,35vw,36rem);margin-left:clamp(0rem,5vw,5rem);border-color:transparent;background:var(--blue);color:#fff}.practice-row--01::after{position:absolute;right:clamp(1.5rem,7vw,8rem);bottom:0;width:38%;height:1px;background:rgba(255,255,255,.48);content:"";transform:rotate(-35deg);transform-origin:right}.practice-row--01 .practice-index,.practice-row--01 .practice-summary a{color:#fff}.practice-row--01 .practice-summary p{color:#e8efff}.practice-row--02{margin-right:clamp(0rem,9vw,10rem)}.practice-row--02 h3{max-width:9ch}.practice-row--02::before{position:absolute;top:0;right:0;width:16%;height:100%;background:linear-gradient(180deg,transparent,rgba(47,107,255,.09),transparent);content:""}.practice-row--03{min-height:clamp(23rem,31vw,31rem);margin-left:clamp(0rem,12vw,13rem);border-color:transparent;background:var(--ink);color:#fff}.practice-row--03 .practice-index,.practice-row--03 .practice-summary a{color:var(--bright)}.practice-row--03 .practice-summary p{color:#b8c2d3}.practice-row--03::after{position:absolute;top:0;right:13%;width:1px;height:100%;background:linear-gradient(180deg,transparent,#356fff,transparent);content:""}.practice-row--04{min-height:clamp(17rem,21vw,22rem);margin-right:clamp(0rem,5vw,5rem);border-color:transparent;background:var(--pale)}.practice-row--04 h3{max-width:14ch}.practice-row--04::before{position:absolute;right:3rem;bottom:2.5rem;width:11rem;height:1px;background:var(--blue);content:"";transform:rotate(-28deg)}@media(max-width:48rem){.practice-sequence{margin-top:3rem}.practice-row,.practice-row--01,.practice-row--02,.practice-row--03,.practice-row--04{grid-template-columns:1fr;gap:1.5rem;min-height:auto;margin-right:0;margin-left:0;padding:2.3rem 1.5rem}.practice-row h3{max-width:12ch;font-size:clamp(3rem,12vw,4.6rem)}.practice-row--01,.practice-row--03{padding-block:3rem}.practice-summary{max-width:31rem}.practice-summary p{font-size:1rem}.practice-row--04::before{right:1.5rem;bottom:2rem;width:8rem}}
+/* Sistema Vivo: produtos como capítulos, alinhados e legíveis (texto desenvolvido). */
+.practice-grid{display:none}
+
+.practice-sequence{
+  margin-top:clamp(2.5rem,5vw,4.5rem);
+  display:flex;flex-direction:column;gap:clamp(1rem,2vw,1.5rem);
+}
+
+.practice-row{
+  position:relative;
+  display:grid;
+  grid-template-columns:minmax(11rem,.85fr) minmax(20rem,1.15fr);
+  gap:clamp(1.5rem,4vw,4rem);
+  align-items:start;
+  padding:clamp(2.2rem,3.6vw,3.4rem) clamp(1.6rem,3vw,3.2rem);
+  border:1px solid var(--line);
+  border-radius:20px;
+  background:var(--white,#fff);
+}
+.practice-index{
+  grid-column:1;margin:0 0 .8rem;
+  color:var(--blue);font-size:.9rem;font-weight:800;letter-spacing:.04em;
+}
+.practice-row h3{
+  grid-column:1;align-self:start;
+  max-width:12ch;margin:0;
+  font-size:clamp(2.4rem,4vw,4rem);font-weight:700;letter-spacing:-.045em;line-height:.94;
+}
+.practice-summary{grid-column:2;align-self:start;max-width:40rem}
+.practice-summary p{margin:0;color:var(--muted);font-size:clamp(1.04rem,1.1vw,1.15rem);line-height:1.62}
+.practice-summary p strong{
+  display:block;margin-bottom:.55rem;
+  color:var(--ink);font-weight:800;font-size:1.12em;line-height:1.28;
+}
+.practice-summary a{
+  display:inline-block;margin-top:1.4rem;
+  color:var(--ink);font-size:.92rem;font-weight:800;text-decoration:none;
+}
+.practice-summary a:hover{color:var(--blue)}
+
+/* Bloco de entrada em destaque */
+.practice-row--01{background:var(--blue);border-color:transparent;color:#fff}
+.practice-row--01 .practice-index,
+.practice-row--01 .practice-summary a{color:#fff}
+.practice-row--01 .practice-summary p{color:#e8efff}
+.practice-row--01 .practice-summary p strong{color:#fff}
+
+/* Bloco escuro */
+.practice-row--03{background:var(--ink);border-color:transparent;color:#fff}
+.practice-row--03 .practice-index,
+.practice-row--03 .practice-summary a{color:var(--bright,#5a8cff)}
+.practice-row--03 .practice-summary p{color:#c3ccdb}
+.practice-row--03 .practice-summary p strong{color:#fff}
+
+/* Bloco claro */
+.practice-row--04{background:var(--pale,#eef2fb);border-color:transparent}
+
+@media(max-width:52rem){
+  .practice-row,
+  .practice-row--01,.practice-row--02,.practice-row--03,.practice-row--04{
+    grid-template-columns:1fr;gap:1.1rem;padding:2rem 1.5rem;
+  }
+  .practice-summary{grid-column:1;max-width:100%}
+  .practice-row h3{font-size:clamp(2.6rem,11vw,3.6rem)}
+}
