@@ -1,0 +1,21 @@
+/* Páginas internas: mesma linguagem premium da home. */
+.page-hero{padding:clamp(4.5rem,9vw,7rem) 0 clamp(1.8rem,3vw,2.6rem);border-bottom:1px solid var(--line)}
+.page-hero h1{font-size:clamp(2.6rem,6vw,4.4rem);font-weight:800;letter-spacing:-.03em;line-height:1.02;max-width:20ch;margin:.6rem 0 0}
+.page-hero .intro{max-width:54ch;margin:1.3rem 0 0;color:var(--muted);font-size:1.1rem;line-height:1.6}
+.card-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(20rem,1fr));gap:1.4rem;padding:clamp(2.4rem,5vw,3.6rem) 0}
+.card{display:flex;flex-direction:column;background:var(--white);border:1px solid var(--line);border-radius:18px;padding:1.8rem;text-decoration:none;color:inherit;transition:transform .3s,box-shadow .3s,border-color .3s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -24px rgba(9,12,19,.38);border-color:var(--blue)}
+.card .meta{color:var(--blue);font-size:.76rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.card h3{font-size:1.45rem;font-weight:800;letter-spacing:-.02em;line-height:1.15;margin:.7rem 0 .5rem}
+.card p{color:var(--muted);font-size:.97rem;line-height:1.55;margin:0}
+.card .go{margin-top:auto;padding-top:1.2rem;font-weight:800;font-size:.9rem;color:var(--ink)}
+.card--soon{opacity:.72}.card--soon .go{color:var(--muted)}
+.prose{max-width:42rem;margin:0 auto;padding:clamp(3rem,6vw,4.5rem) 0}
+.prose .meta{color:var(--blue);font-weight:800;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase}
+.prose h1{font-size:clamp(2.2rem,5vw,3.3rem);font-weight:800;letter-spacing:-.03em;line-height:1.07;margin:.6rem 0 0}
+.prose .sub{color:var(--muted);font-size:1.14rem;line-height:1.5;margin:1.1rem 0 0}
+.prose h2{font-size:1.5rem;font-weight:800;margin:2.6rem 0 .5rem;letter-spacing:-.02em}
+.prose p{color:#2b3140;font-size:1.06rem;line-height:1.72;margin:.9rem 0}
+.prose .back{display:inline-block;margin-top:3rem;font-weight:800;color:var(--ink);text-decoration:none}
+.prose .back:hover{color:var(--blue)}
+@media(max-width:40rem){.card-list{grid-template-columns:1fr}}

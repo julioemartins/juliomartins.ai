@@ -1,60 +1,12 @@
-<!--
-  TEMPLATE DE ARTIGO, fluxo de publicação manual
-  1. Copie este arquivo para /blog/nome-do-artigo.html.
-  2. Troque todas as marcações “TROCAR”.
-  3. Atualize título, descrição, URL e Open Graph no <head>.
-  4. Adicione um <li> no topo de /blog/index.html usando o comentário “NOVO ARTIGO”.
-  5. Faça um commit. Não há build, framework ou etapa adicional.
--->
-<!-- Modernismo de Travessia: leitura editorial, evidência e sobriedade operacional. -->
-<!doctype html>
-<html lang="pt-BR">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- TROCAR: título da aba, formato “Título do artigo, Julio Martins”. -->
-  <title>Título do artigo, Julio Martins</title>
-  <!-- TROCAR: descrição para SEO/OG, com cerca de 150,160 caracteres. -->
-  <meta name="description" content="Descrição objetiva do artigo: o problema, a ideia central e para quem este texto é útil.">
-  <meta property="og:type" content="article"><meta property="og:locale" content="pt_BR">
-  <!-- TROCAR: título para Open Graph. --><meta property="og:title" content="Título do artigo, Julio Martins">
-  <!-- TROCAR: descrição para Open Graph. --><meta property="og:description" content="Descrição objetiva do artigo: o problema, a ideia central e para quem este texto é útil.">
-  <!-- TROCAR: og:image quando houver imagem de capa; enquanto isso, manter a imagem padrão. --><meta property="og:image" content="https://juliomartins.ai/assets/img/og-default.svg">
-  <!-- TROCAR: URL pública final do artigo. --><meta property="og:url" content="https://juliomartins.ai/blog/nome-do-artigo.html">
-  <!-- TROCAR: URL canônica pública final. --><link rel="canonical" href="https://juliomartins.ai/blog/nome-do-artigo.html">
-  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100,700;100,800;100,900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="../styles.css">
-</head>
-<body>
-  <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
-  <header class="site-header"><div class="page-shell header-inner"><a class="brand" href="../index.html" aria-label="Julio Martins, página inicial"><span class="brand-mark" aria-hidden="true"></span><span class="brand-wordmark"><span>JULIO</span><span>MARTINS</span></span></a><nav class="site-nav" aria-label="Navegação principal"><a href="../index.html#tese">Tese</a><a href="../casos/index.html">Casos</a><a href="index.html" aria-current="page">Blog</a><a href="../index.html#sobre">Sobre</a><a href="../index.html#contato">Contato</a></nav></div></header>
-  <main id="conteudo">
-    <header class="article-header"><div class="page-shell"><p class="section-label">Artigo</p><!-- TROCAR: título. --><h1>Título do artigo com uma ideia clara e específica</h1><!-- TROCAR: descrição curta / subtítulo. --><p class="dek">Uma frase que situa a discussão, dá contexto ao leitor e explica por que este texto vale a leitura.</p><!-- TROCAR: data visível e atributo datetime. --><p class="article-meta"><time datetime="2026-08-25">25 ago. 2026</time> · Julio Martins</p></div></header>
-    <article class="page-shell article">
-      <!-- TROCAR: corpo do artigo. Os exemplos abaixo mostram todos os elementos já estilizados. -->
-      <p>Um bom artigo começa por uma observação concreta. Este parágrafo abre o argumento e situa uma decisão, uma restrição ou uma consequência operacional que importa para quem está lendo.</p>
-      <h2>Subtítulo de primeiro nível</h2>
-      <p>Use <strong>negrito com parcimônia</strong> para destacar o que precisa sobreviver à leitura rápida. Em textos sobre sistemas críticos, clareza vale mais do que intensidade retórica.</p>
-      <h3>Subtítulo de segundo nível</h3>
-      <p>Parágrafos curtos preservam ritmo. A largura de leitura desta página foi desenhada para aproximadamente 65 caracteres por linha.</p>
-      <ul><li>Exemplo de item em lista sem ordem.</li><li>Outro ponto, com informação verificável e direta.</li></ul>
-      <ol><li>Exemplo de item em lista ordenada.</li><li>Uma sequência que explica dependências ou etapas.</li></ol>
-      <blockquote>“Uma citação deve sintetizar um ponto de vista, uma decisão ou uma evidência, não apenas ocupar espaço.”</blockquote>
-      <!-- TROCAR: caminho, texto alternativo e legenda da imagem. Mantenha imagem otimizada. -->
-      <figure><img src="../assets/img/og-default.svg" alt="Composição gráfica em azul-aço e grafite para representar continuidade operacional"><figcaption>Legenda da imagem: explique o que ela mostra e por que importa.</figcaption></figure>
-      <h2>Quando código é evidência</h2>
-      <p>Use <code>código curto</code> dentro do parágrafo para nomes de conceitos, comandos ou estruturas. Para exemplos maiores, use o bloco abaixo.</p>
-      <pre><code># Exemplo de bloco de código
-def criterio_de_virada(equivalencia_comprovada, operacao_estavel):
-    return equivalencia_comprovada and operacao_estavel</code></pre>
-      <h2>Uma tabela quando a comparação ajuda</h2>
-      <table><thead><tr><th>Decisão</th><th>Critério</th><th>Efeito</th></tr></thead><tbody><tr><td>Escrita dupla</td><td>Equivalência verificável</td><td>Virada com risco controlado</td></tr><tr><td>Migração progressiva</td><td>Operação preservada</td><td>Aprendizado antes da escala</td></tr></tbody></table>
-      <aside class="callout"><p><strong>Destaque.</strong> Use este bloco para uma consequência prática, uma ressalva importante ou um resumo que merece ficar visível na leitura por varredura.</p></aside>
-      <h2>Encerramento</h2>
-      <p>Feche o artigo com a implicação da ideia para a operação, para a decisão de negócio ou para o próximo passo. Evite repetir o título; avance a conversa.</p>
-    </article>
-  </main>
-  <footer class="site-footer"><div class="page-shell footer-inner"><span>© 2026 Julio Martins</span><a href="https://juliomartins.ai/">juliomartins.ai</a></div></footer>
-</body>
-</html>
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TROCAR: título do post, Julio Martins</title><meta name="description" content="TROCAR: título do post.">
+<link rel="canonical" href="https://juliomartins.ai/"><link rel="icon" href="../assets/img/marca-trilhos.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css?v=3"><link rel="stylesheet" href="../styles-improvements.css?v=3"><link rel="stylesheet" href="../internal.css?v=1"></head><body>
+<a class="skip-link" href="#c">Ir para o conteúdo</a>
+<header class="site-header"><div class="shell header-inner"><a class="brand" href="../index.html" aria-label="Julio Martins, início"><img src="../assets/img/marca-trilhos.webp" alt=""><span><b>Julio</b><b>Martins</b></span></a><nav class="site-nav" aria-label="Navegação principal"><a href="../index.html#praticas">O que eu faço</a><a href="../casos/index.html">Casos</a><a href="index.html">Blog</a><a href="../index.html#sobre">Sobre</a><a class="nav-cta" href="../index.html#contato">Vamos conversar ↗</a></nav></div></header>
+<main id="c"><article class="prose"><p class="meta">Blog · TROCAR: data</p><h1>TROCAR: título do post</h1><p class="sub">Este é um texto provisório. O conteúdo real deste caso entra depois, com contexto, as decisões difíceis, os números e o resultado, escrito com o método de sempre: tese, evidência e ação. Enquanto isso, a estrutura e o design já ficam prontos para receber o texto definitivo sem retrabalho.</p>
+<h2>Subtítulo da seção</h2><p>Este é um texto provisório. O conteúdo real deste caso entra depois, com contexto, as decisões difíceis, os números e o resultado, escrito com o método de sempre: tese, evidência e ação. Enquanto isso, a estrutura e o design já ficam prontos para receber o texto definitivo sem retrabalho.</p><p>Este é um texto provisório. O conteúdo real deste caso entra depois, com contexto, as decisões difíceis, os números e o resultado, escrito com o método de sempre: tese, evidência e ação. Enquanto isso, a estrutura e o design já ficam prontos para receber o texto definitivo sem retrabalho.</p><h2>Outra seção</h2><p>Este é um texto provisório. O conteúdo real deste caso entra depois, com contexto, as decisões difíceis, os números e o resultado, escrito com o método de sempre: tese, evidência e ação. Enquanto isso, a estrutura e o design já ficam prontos para receber o texto definitivo sem retrabalho.</p>
+<a class="back" href="index.html">← Voltar ao blog</a></article></main>
+<footer class="site-footer"><div class="shell footer-inner"><a class="brand" href="../index.html"><img src="../assets/img/marca-trilhos.webp" alt=""><span><b>Julio</b><b>Martins</b></span></a><p>© 2026 Julio Martins</p><a href="https://juliomartins.ai/">juliomartins.ai ↗</a></div></footer></body></html>
